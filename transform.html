@@ -5,11 +5,43 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Transform</title>
-  <link rel="stylesheet" href="style.css">
+  <style>
+    body{
+        margin-left: 200px;
+    }
+    .container, .inner{
+        width: 200px;
+        height: 200px;
+       
+    }
+    .container{
+        border: 3px solid purple;
+        background-color: antiquewhite;
+    }
+    .inner{
+        border: 2px solid sandybrown;
+        background-color: rgb(152, 152, 193);
+        /* display: none; */
+        /* transform:scale(0.65) rotate(-45deg); */}
+        .inner:hover{
+            transform:scale(0.65) rotate(-45deg);
+        }
+  </style>
 </head>
 <body>
     <h2>Transform and Translate</h2>
-  
+  <div class="container">
+    
+    <div class="inner">Inner-1</div>
+  </div>
+  <div class="container">
+    
+    <div class="inner">Inner-2</div>
+  </div>
+  <div class="container">
+    
+    <div class="inner">Inner-3</div>
+  </div>
   <script src="script.js"></script>
 </body>
 </html>
